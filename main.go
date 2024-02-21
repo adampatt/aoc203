@@ -43,9 +43,8 @@ func main() {
 			res = append(res, resString)
 		}
 	}
-
 	readFile.Close()
-
+	fmt.Println(res)
 	result := 0
 	for _, n := range res {
 		num, _ := strconv.Atoi(n)
